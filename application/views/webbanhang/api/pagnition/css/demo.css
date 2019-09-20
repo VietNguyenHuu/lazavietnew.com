@@ -1,0 +1,12 @@
+a{text-decoration:none;}
+a:link{color:#6666aa;}
+a:visited{color:#6666aa;}
+a:hover{color:#6666ff;}
+a:active{color:#4444ff;}
+
+div.page_seperator_box{box-sizing: border-box;margin:1em 2px;width:auto;min-height:1em;padding:0.5em 2px;line-height:2em;background-color:rgba(225,225,225,0.1);margin-top:1em;text-align:center;word-break: break-all;}
+div.page_seperator_box:before{content:'Trang ';color:#666666}
+a.page_seperator_item{padding:3px 3px;background-color:#ffffff;margin:0px 2px;border-radius:0px;display:inline-block;line-height:1.3em;}
+a.page_seperator_item:hover,a.page_seperator_item.selected{color:#ff3333;}
+
+.item{display:inline-block; width: 100px; margin:5px; background-color: #eeeeff; padding:0.5em;}

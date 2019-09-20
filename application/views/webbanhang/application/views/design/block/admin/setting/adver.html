@@ -1,0 +1,26 @@
+<div class='padding_v'>
+    <span class='button padding fontsize_d2' onclick='top_advertiment.loadlist()'>
+        <i class='fa fa-list'></i>
+        Tải danh sách
+    </span>
+    <span class='button padding fontsize_d2' onclick="$('#top_advertiment_add').toggleClass('hide')">+ Thêm quảng cáo</span>
+</div>
+<fieldset class='hide' name='top_advertiment_add' id='top_advertiment_add'>
+    <legend>Thêm quảng cáo:</legend>
+    <div>
+        <input type='text' name='title' placeholder='Tiêu đề'> 
+        <input type='text' name='link' placeholder='link đích'> 
+        <select name='adstype'>
+            <option value='navi'>NAVI</option>
+            <option value='main'>MAIN</option>
+        </select>
+        <input type='file' id='top_advertiment_add_inputavata' onchange='top_advertiment.add_setavata(this)' style='display:none;'>
+        <span class='button gray padding' onclick="document.getElementById('top_advertiment_add_inputavata').click()">
+            <img src='' name='top_advertiment_add_avata' class='align_middle' style='width:1em;height:1em;'>
+            <span class='align_middle margin_l'>Hình ảnh</span>  
+        </span>
+        <input type='button' value=' Đăng quảng cáo ' onclick='top_advertiment.add()'>
+    </div>
+</fieldset>
+
+<div name='top_advertiment_list'></div>

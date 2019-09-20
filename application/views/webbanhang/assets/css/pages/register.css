@@ -1,0 +1,22 @@
+.page_title{margin-bottom: 0.5em}
+#register_content{padding:5px 0px;border-radius:5px;}
+#register_content .step_tip{margin-bottom: 1.5em}
+#register_content div.item{padding:5px 0px; margin-top:5px;min-height:40px;vertical-align:top;border-radius:10px;}
+#register_content div.item span.label{color:#666666;font-size:80%;display:block;margin-bottom:0.5em;}
+#register_content div.item input,#register_content div.item select{width:100%;max-width:100%;height:3em;padding:0.5em;border-top-right-radius:20px;border-bottom-left-radius:20px;}
+#register_content div.item select{border-radius:0px;}
+#register_content div.item input:focus{outline:0px;border:1px solid #22ff22;}
+#register_content div.item select:focus,div[name='control'] input:focus{outline:0px;}
+#register_content div.check{padding:7px 0px;}
+div[name='policy'] li{margin-left:20px;margin-right:0px;width:auto;line-height:20px;}
+#register_content label[for='register_checkbox']{font-style:italic;font-weight:normal;}
+#register_content div[name='control']{padding:20px 0px;text-align:center;}
+#register_content div[name='control'] input{height:40px;border-radius:20px;padding:10px 30px;}
+
+#register_content .step_box .control{line-height:3em;margin-top: 1em;padding:1em;background-color: rgba(38,161,221,0.1);border-top:1px solid #666}
+#register_content .step_box .control .button{line-height: 1.2em}
+
+@media all and (min-width:780px)
+{
+    #register_name{font-size:130%;padding:0.5em;}
+}

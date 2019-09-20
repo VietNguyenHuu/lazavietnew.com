@@ -1,0 +1,5 @@
+.page_title{margin-bottom: 0px}
+textarea[name='reset_securecode']{width: 100%; display: block; max-width: 100%; min-height: 100px;}
+form[name='reset_form'] .label{margin-top: 0.5em}
+form[name='reset_form'] input[type='text'], form[name='reset_form'] input[type='password']{display: block; padding:0.5em; width:100%; max-width: 100%;}
+

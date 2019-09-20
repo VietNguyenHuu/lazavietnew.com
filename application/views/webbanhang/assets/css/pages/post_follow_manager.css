@@ -1,0 +1,15 @@
+.page_title{margin-bottom:0px;}
+.post_follow_header{background-color:#fbd3e5; color: #e66611}
+.post_follow_content{background-color: #ffffff;}
+.post_follow_item_avata{height: 2em; max-width:5em;}
+.post_follow_item{max-height: 3.2em;overflow:hidden;line-height:2em;padding-top:0.5em;padding-bottom: 0.5em;border-bottom:1px solid #cccccc}
+.post_follow_item:hover{max-height:none}
+.post_follow_item .stt_action{margin-top:2px}
+@media all and (min-width: 720px) 
+{
+    
+}
+@media all and (min-width: 1280px) 
+{
+    .post_follow_contain{margin-left:-5px;margin-right:-5px;width:auto}
+}

@@ -1,0 +1,16 @@
+/*css for admin user*/
+.user_item{position: relative; box-shadow: 2px 2px 5px #ffffff;margin-bottom: 5px; background-color: #f5ebeb}
+.user_item.male{color: #6666ff}
+.user_item.female{color: #ff66cc}
+.user_item:before{content: ''; display: inline-block; position: absolute; top: 15px; left: 30px; width: 10px; height: 10px; border-radius: 50%;background-color: #999999; }
+.user_item.online:before{background-color: #26a1dd}
+.user_item_avata{margin-right:10px;height:30px; background-color: #ffffff}
+
+.user_info_box{box-shadow: 2px 2px 5px #ffffff;margin-bottom: 5px;margin-bottom:1em;padding: 0.5em;}
+
+.user_info_avata{height:4em;width:4em;margin-right:0.5em;border-radius: 50%;vertical-align: middle;border: 2px solid #ffffff;}
+
+
+
+
+

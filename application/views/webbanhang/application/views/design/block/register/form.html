@@ -1,0 +1,165 @@
+<form id='register_form' action='register/index' method='post'>
+    <div class='step_box' stt='1'>
+        <div class='stt_tip font_roboto step_tip'>
+            <b class='fontsize_a2 stt_tip font_roboto'>Gợi ý: </b>
+            Thật tuyệt, chỉ vài bước thôi, bạn sẽ có ngay một tài khoản, hãy chọn tên đăng nhập, mật khẩu, và số điện thoại  của bạn.
+        </div>
+        <div class='width_max700px'>
+            <div class='item'>
+                <span class='label'>Tên đăng nhập</span>
+                <input onchange='kt_name()' type='text' value='{{dk_name}}' id='register_name' name='register_name' placeholder='vd: dinhnamnguyen' autofocus>
+                <div id='register_check_name' class='check'></div>
+            </div>
+
+            <div class='width3 width3_0_12 width3_720_6 padding_r'>
+                <div class='item'>
+                    <span class='label'>Mật khẩu </span>
+                    <input type='password' value='{{dk_pass}}' id='register_pass' onchange='kt_pass()' name='register_pass' >
+                    <div id='register_check_pass' class='check'></div>
+                </div>
+            </div>
+            <div class='width3 width3_0_12 width3_720_6 padding_l'>
+                <div class='item'>
+                    <span class='label'>Lặp lại mật khẩu </span>
+                    <input type='password' value='{{dk_repass}}' id='register_repass' onchange='kt_repass()' name='register_repass'>
+                    <div id='register_check_repass' class='check'></div>
+                </div>
+            </div>
+            <div class='clear_both'></div>
+
+            <div class='item'>
+                <span class='label'>Số điện thoại </span>
+                <input type='text' value='{{dk_phone}}' placeholder='vd: 0967258243' id='register_phone' name='register_phone' onchange='kt_phone()'>
+                <div id='register_check_phone' class='check'></div>
+            </div>
+
+        </div>
+        <div class='margin_v padding control'>
+            <div class='width_max700px'>
+                <span class='button padding red float_left' onclick='register_reset()'>
+                    <i class='fa fa-undo'></i> 
+                    Làm lại
+                </span>
+                <span class='button padding float_right' onclick='register_go_step(2)'>
+                    Tiếp tục 
+                    <i class='fa fa-chevron-right'></i>
+                </span>
+                <div class='clear_both'></div>
+            </div>
+        </div>
+    </div>
+    <div class='hide step_box' stt='2'>
+        <div class='stt_tip font_roboto step_tip'>
+            <b class='fontsize_a2 stt_tip font_roboto'>Gợi ý: </b>
+            Sắp hoàn tất, hãy thêm các thông tin của bạn. Tuy nhiên, bạn có thể để trống các trường này.
+        </div>
+        <div class='width_max700px'>
+            <div class='width3 width3_0_12 width3_720_6 padding_r'>
+                <div class='item'>
+                    <span class='label'>Họ và tên </span>
+                    <input type='text' value='{{dk_realname}}' id='register_realname' placeholder='vd: Nguyễn Văn A' name='register_realname' onchange='kt_realname()'>
+                    <div id='register_check_realname' class='check'></div>
+                </div>
+            </div>
+            <div class='width3 width3_0_12 width3_720_6 padding_l'>
+                <div class='item'>
+                    <span class='label'>Địa chỉ email </span>
+                    <input type='text' value='{{dk_email}}' id='register_email' placeholder='vd: dinhnam2901@gmail.com' name='register_email' onchange='kt_email()'>
+                    <div id='register_check_email' class='check'></div>
+                </div>
+            </div>
+            <div class='width3 width3_0_12'>
+                <div class='item'>
+                    <span class='label'>Địa chỉ </span>
+                    <input type='text' value='{{dk_address}}' id='register_address' placeholder='vd: số 123, đường cách mạng tháng tám, quận 10' name='register_address' onchange='kt_address()'>
+                    <div id='register_check_address' class='check'></div>
+                </div>
+            </div>
+            <div class='width3 width3_0_6 width3_720_4'>
+                <div class='item'>
+                    <span class='label'>Giới tính </span>
+                    <select name='register_sex'>
+                        <option value=1>Nam</option>
+                        <option value=0 {{dk_iswomen_check}}>Nữ</option>
+                    </select>
+                    <div class='check'></div>
+                </div>
+            </div>
+            <div class='width3 width3_0_6 width3_720_4'>
+                <div class='item' style='margin-bottom:20px;'>
+                    <span class='label'>Năm sinh </span>
+                    <select name='register_year'>
+                        {{dk_years}}
+                    </select>
+                </div>
+            </div>
+            <div class='width3 width3_0_12 width3_720_4'>
+                <div class='item' style='margin-bottom:20px;'>
+                    <span class='label'>Tỉnh / Thành phố </span>
+                    <select name='register_province'>
+                        {{dk_provinces}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class='clear_both'></div>
+        <div class='margin_v padding control'>
+            <div class='width_max700px'>
+                <span class='button padding gray float_left' onclick='register_go_step(1)'>
+                    <i class='fa fa-chevron-left'></i> 
+                    Quay lại
+                </span>
+                <span class='button padding red float_left' onclick='register_reset()'>
+                    <i class='fa fa-undo'></i> 
+                    Làm lại
+                </span>
+                <span class='button padding float_right' onclick='register_go_step(3)'>
+                    Tiếp tục 
+                    <i class='fa fa-chevron-right'></i>
+                </span>
+                <div class="clear_both"></div>
+            </div>
+        </div>
+    </div>
+    <div class='hide step_box' stt='3'>
+        <div class='stt_tip font_roboto step_tip'>
+            <b class='fontsize_a2 stt_tip font_roboto'>Gợi ý: </b>
+            Bước cuối cùng, đồng ý điều khoản sử dụng và nhập mã bảo mật.
+        </div>
+        <div class='width_max700px padding_v margin_v'>
+            <div class='margin_v'>
+                Hãy nhập mã sau đây vào ô bên cạnh 
+                <img class='align_middle' src='{{capcha_src}}' style='height:2.1em'>
+                <br>
+                <input type='text' name='register_capcha' value='' class='align_middle margin_l0' placeholder='Nhập mã capcha'>
+            </div>
+
+            <div name='policy' class='hide'>
+                <ul>
+                    <li>Không đăng tin, sản phẩm, bình luận liên quan tới các vấn đề chính trị, tôn giáo.</li>
+                    <li>Ngôn từ sử dụng phù hợp, không vi phạm thuần phong mĩ tục văn hóa việt.</li>
+                    <li>Không cố ý tạo spam trên các gian hàng.</li>
+                    <li>Tự bảo đảm các vấn đề bảo mật chủ quan trên thiết bị của mình.</li>
+                    <li>Tài khoản vi phạm các điều trên sẽ bị khóa mà không cần báo trước.</li>
+                </ul>
+            </div>
+            <div class="margin_t1em">
+                <input type='checkbox' style='padding:5px;' name='register_checkbox' id='register_checkbox' onclick='register_tick()'> 
+                <label for='register_checkbox'>Tôi đã đọc và đồng ý với </label>
+                <span onclick='view_policy()' class='stt_action stt_highlight'>điều khoản sử dụng</span>
+            </div>
+        </div>
+
+        <div class='margin_v padding align_center control'>
+            <div class='width_max700px'>
+                <span class='button padding gray float_left' onclick='register_go_step(2)'>
+                    <i class='fa fa-chevron-left'></i> 
+                    Quay lại
+                </span>
+                <input class='button red float_left' type='reset' value=' Làm lại ' onclick='register_reset()'>
+                <input class='button float_right' type='submit' value=' Đăng ký ' id='register_submit'>
+                <div class="clear_both"></div>
+            </div>
+        </div>
+    </div>
+</form>

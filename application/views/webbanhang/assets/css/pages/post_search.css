@@ -1,0 +1,9 @@
+/*css for search post */
+.page_title{margin-bottom: 0.2em;}
+.post_search_headder,.post_search_result_box{padding: 0.5em 0.5em;background-color: #ffffff;}
+.post_search_result_box{margin-top: 0.5em;}
+select[name='supper_search_type']{margin-left:0px;}
+form.supper_search{line-height:2.5em;}
+@media all and (min-width:1024px)
+{
+} 

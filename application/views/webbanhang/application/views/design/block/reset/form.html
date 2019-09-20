@@ -1,0 +1,68 @@
+<form method="post" action="reset" name="reset_form">
+    <p class="label">Secure code</p>
+    <textarea 
+        class='margin_l0' 
+        name="reset_securecode" 
+        placeholder="Secure code">{{reset_securecode}}</textarea>
+    <div class="padding_v">&nbsp</div>
+    <div class="width3 width3_0_12 width3_1024_6">
+        <p class="fontsize_a4 font_noticalight group_label">Site infomation</p>
+        <p class="label">Site domain name</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="text" 
+            name="reset_domainname" 
+            value="{{reset_domainname}}"
+            placeholder="Site domain name"/>
+
+        <p class="label">Site title</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="text" 
+            name="reset_title" 
+            value="{{reset_title}}"
+            placeholder="Site title"/>
+
+        <p class="label">Post root type</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="text" 
+            name="reset_postroottype" 
+            value="{{reset_postroottype}}"
+            placeholder="Post root type"/>
+
+    </div>
+    <div class="width3 width3_0_12 width3_1024_6">
+        <p class="fontsize_a4 font_noticalight group_label">Admin infomation</p>
+        <p class="label">Admin username</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="text" 
+            name="reset_username" 
+            value="{{reset_username}}"
+            placeholder="Admin username"/>
+
+        <p class="label">Admin password</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="password" 
+            name="reset_password" 
+            value="{{reset_password}}"
+            placeholder="Admin password"/>
+
+        <p class="label">Admin email</p>
+        <input 
+            class='margin_l0 fontsize_a2 font_noticalight' 
+            type="text" 
+            name="reset_email" 
+            value="{{reset_email}}"
+            placeholder="Admin email"/>
+
+    </div>
+    <div class="clear_both"></div>
+
+    <p class="stt_mistake margin_t1em  fontsize_a4 font_noticalight">Tất cả dữ liệu website sẽ bị mất khi thực hiện chức năng này.</p>
+    <div class="padding_v">
+        <input class='button red' type="submit" value="Start reset process">
+    </div>
+</form>

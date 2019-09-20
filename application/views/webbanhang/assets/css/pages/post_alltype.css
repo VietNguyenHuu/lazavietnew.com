@@ -1,0 +1,44 @@
+#post_content_menu{font-size:16px;}
+.sub_menu{height:auto !important;overflow: visible;z-index: 100;}
+.sub_menu_header{display:block;padding: 0.5em;background-color: #fff;margin: 0px;text-transform: uppercase;}
+.sub_menu_header:hover{background-color: #fee;}
+.sub_menu_header_arrow{display:inline-block;margin-right:-0.75em;margin-top:0.5em;background-color:#fff}
+.sub_menu_header:hover .sub_menu_header_arrow{background-color:#fee}
+.sub_menu_header *{color:#333333}
+.sub_menu_header .icon_list{vertical-align: middle;}
+.sub_menu_list{background-color: #fefefe;padding-top:1em}
+.sub_menu.extra .sub_menu_list{display:block;}
+
+.sub_menu_list .submenu_item{background-color: #dddddd;padding:0.5em;border-radius:0px}
+.sub_menu_list .submenu_item a{color:#e48c2e;}
+.sub_menu_list .submenu_item a:hover{color:#000033}
+.sub_menu_list .submenu_item_sub{padding-left: 1em;}
+.sub_menu_list .submenu_item_sub a:hover{color:#000033}
+.sub_menu_list .submenu_item_sub:before{content: "- ";color:#82a8de;}
+.sub_menu_list_toparrow_box{overflow: hidden;margin-top:-1.25em}
+.sub_menu_list_toparrow{background-color: #fefefe;display:inline-block;}
+@media all and (min-width: 320px) 
+{
+}
+@media all and (min-width: 480px) 
+{
+}
+@media all and (min-width: 600px) 
+{
+    
+}
+@media all and (min-width: 720px) 
+{
+}
+@media all and (min-width: 800px) 
+{
+}
+@media all and (min-width: 980px) 
+{
+}
+@media all and (min-width: 1024px) 
+{
+}
+@media all and (min-width: 1240px) 
+{
+}

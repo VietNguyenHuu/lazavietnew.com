@@ -1,0 +1,9 @@
+/*css for admin setting*/
+div[name='main_menu_list'] .item{padding: 0.5em 3px;border-bottom: 1px dotted #fff;cursor:pointer;}
+div[name='main_menu_list'] .item:nth-child(2n+1){background-color:rgba(100,100,100,0.1)}
+div[name='main_menu_list'] .item:hover{background-color:rgba(100,100,100,0.2)}
+div[name='main_menu_list'] .item_avata{width:1em;height:1em;margin-right:0.5em}
+div[name='main_menu_list'] .item_control{float:right}
+div[name='main_menu_list'] .item_control img{width:1em;height:1em;margin-left: 0.5em;}
+div[name='main_menu_list'] .item_control .icon{margin-left: 0.5em;}
+div[name='main_menu_list'] .item_control .icon:hover{background-color: rgba(255,255,255,0.9);}

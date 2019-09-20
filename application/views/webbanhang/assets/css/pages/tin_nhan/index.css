@@ -1,0 +1,49 @@
+/*css for page*/
+#main{padding:0px}
+.tin_nhan_left_header,.tin_nhan_content_header{border-bottom: 1px solid #999999;padding: 0.5em 0px;}
+#tin_nhan_new_form_content{display:block;width: 100%;overflow: auto;min-height:6em;max-height:20em;resize:none}
+.tin_nhan_short_statistic{border-bottom:1px solid #999999}
+
+.tin_nhan_user_with.minium{display:none}
+.tin_nhan_user_with_avata{height:2em;width: 2em;}
+
+.tin_nhan_stream_detail_form_nd{display: block;position: relative;}
+.tin_nhan_stream_detail_form_nd_input{width: 100%;margin:0px;vertical-align: middle;border-radius: 0px;resize:none;height:auto}
+.tin_nhan_stream_detail_form_nd_input:hover{height: 10em;}
+.tin_nhan_stream_detail_form_buttonsend{line-height: 3em;}
+.tin_nhan_stream_detail_form_buttonsend_button{border-radius:0px;}
+
+.tin_nhan_stream_detail_content_item{padding: 0.5em;margin: 0.5em;border-radius:0.5em;color:#eeeeee;}
+.tin_nhan_stream_detail_content_item.float_left{background-color: #26a1dd;}
+.tin_nhan_stream_detail_content_item.float_right{background-color: #999999;}
+
+@media all and (min-width: 600px) 
+{
+    .tin_nhan{}
+    
+    .tin_nhan{display: table;width:100%;height:100%;overflow: auto;min-height:600px;}
+    .tin_nhan_left{display: table-cell;width: 300px;border-right:1px solid #999999;}
+    .tin_nhan_content{display: table-cell;}
+    .tin_nhan_left_header{padding-right:0.5em;}
+    .tin_nhan_content_header{padding-left:0.5em;}
+    
+    .tin_nhan_user_with.minium{display:block}
+}
+@media all and (min-width: 780px) 
+{
+    .tin_nhan_stream{}
+    .tin_nhan_stream{display: table;width:100%;height:auto;overflow: auto;}
+    .tin_nhan_stream_detail{display: table-cell;padding:0.5em;position: relative;}
+    .tin_nhan_stream_detail_minheight{min-height: 560px;}
+    .tin_nhan_stream_statistic{display: table-cell;width: 300px;border-left:1px solid #999999;vertical-align: top;}
+    .tin_nhan_stream_detail_content{position: absolute;top:0px;bottom:5em;height:auto;overflow: auto;left:0px;right:0.2em;width:auto;}
+    .tin_nhan_stream_detail_form{position: absolute;display:table;bottom:0px;left: 0px;right: 0px;width:100%;background-color: #ffffff;}
+    .tin_nhan_stream_detail_form_nd{display: table-cell;position: relative;}
+    .tin_nhan_stream_detail_form_nd_input{width: 100%;margin:0px;vertical-align: middle;border-radius: 0px;}
+    .tin_nhan_stream_detail_form_nd_input:hover{position:absolute;bottom:0px}
+    .tin_nhan_stream_detail_form_buttonsend{display: table-cell;width:60px;vertical-align: middle;border-radius: 0px;}
+    .tin_nhan_stream_detail_form_buttonsend_button{display:block;text-align:center;width:100%;height:100%;vertical-align: middle;padding:0.2em}
+}
+@media all and (min-width: 1024px) 
+{
+}

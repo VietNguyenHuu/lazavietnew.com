@@ -1,0 +1,17 @@
+#main{padding:0px}
+
+.dn_grid2{}
+.dn_grid2_header{background-color: #c0dff2;padding-top:2em;}
+.dn_grid2_content{background-color: #ffffff;padding-bottom:2em;}
+.dn_grid2_box{width:100%;min-height:1em;background-color: #ffffff;border:1px solid #e6e5e5;padding:1em}
+.dn_grid2_header .dn_grid2_box{border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom: 0px;}
+.dn_grid2_content .dn_grid2_box{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;border-top:0px}
+
+.user_profile img.avata{height:2em;max-width:3em;margin-right:0.5em;vertical-align: middle;}
+.user_profile h1{display: inline;vertical-align: middle;color: #26a1dd;font-weight: normal;font-size: 120%;text-transform: uppercase;}
+
+@media all and (min-width: 600px) 
+{
+    .dn_grid2_box{max-width:800px;margin:0px auto;display:block;}
+}
+

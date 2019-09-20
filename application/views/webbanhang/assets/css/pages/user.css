@@ -1,0 +1,27 @@
+#main{padding:0px}
+.user_block_header{background-color:#fbd3e5}
+.user_info_view img.user_info_view_avata{height:200px;display: block;max-width: 100%;margin:10px auto;}
+
+fieldset{padding:10px;border:1px solid #806040;margin-bottom:40px;border-radius:5px;}
+fieldset legend{border:1px solid #806040;padding:5px 10px;background-color:inherit;color:#406080;font-size:20px;}
+fieldset[name='user_info_view']{line-height: 2em;}
+fieldset[name='user_info_view'] span.button{line-height: 4em !important;}
+
+
+
+
+div[name='user_info_status']{font-size:18px;padding:5px;border:1px solid #806040;background-color:#aaffff;display:none;}
+div[name='user_info_status'] img{float:left;margin-right:5px;height:18px;width:18px;}
+fieldset[name='user_info'] div.item{padding:5px 10px;margin-top:5px;min-height:50px;vertical-align:top;border-radius:10px;}
+fieldset[name='user_info'] div.item:hover{background-color:rgba(100,150,225,0.1);}
+fieldset[name='user_info'] div.item span.label{color:#666666;font-size:20px;display:block;margin-bottom:5px;}
+fieldset[name='user_info'] div.item input,fieldset[name='user_info'] div.item select{width:100%;height:50px;padding:10px 10px;border-top-right-radius:20px;border-bottom-left-radius:20px;}
+fieldset[name='user_info'] div.item select{border-radius:0px;}
+fieldset[name='user_info'] div.item input:focus{outline:0px;border:1px solid #22ff22;}
+fieldset[name='user_info'] div.item select:focus,div[name='control'] input:focus{outline:0px;}
+fieldset[name='user_info'] div.check{padding:7px 0px;}
+
+@media all and (min-width: 720px) 
+{
+    .user_block_money, .user_block_score{padding-top:2em}
+}

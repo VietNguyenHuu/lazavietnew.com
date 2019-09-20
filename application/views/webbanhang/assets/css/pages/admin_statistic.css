@@ -1,0 +1,156 @@
+/*css for statistic*/
+.admin_statistic_flat_message{
+    padding-left:10px;
+    padding-bottom: 1.5em;
+}
+/* Wrapper block*/
+.admin_statistic_sumary_wrapper{
+    padding: 0.5em;
+    background-color: #cccccc;
+    margin-bottom: 0px;
+}
+.admin_statistic_chartview_wrapper{
+    margin-top:0px;
+    margin-bottom: 0px;
+    background-color: #ffffff;
+    padding-bottom:2em;
+}
+.admin_statistic_user_wrapper{
+    background-color: #cccccc;
+    padding: 0.5em;
+    padding-bottom: 2em;
+    margin-bottom: 0px;
+}
+.admin_statistic_post_wrapper{
+    background-color: #bfe6f9;
+    padding: 0.5em;
+    padding-bottom:2em;
+    margin-bottom: 0px;
+}
+/* Summary block*/
+.admin_statistic_sumary{
+    margin-bottom: 1em;
+    color: #333333;
+}
+.admin_statistic_sumary_bg{
+    background-color: #ffffff;
+}
+.admin_statistic_sumary_avatar{
+    padding:10px;
+    background-color: #00c0ef;
+    font-size: 46px;
+    
+}
+.admin_statistic_sumary_info{
+    padding:10px;
+}
+.admin_statistic_sumary_title{
+    font-size: 75%;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.admin_statistic_sumary_number{
+    font-weight: bold;
+}
+/* Chart block */
+.admin_statistic_chartview_wrapper .grid_header,
+.admin_statistic_chartview_wrapper .grid_content{
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+}
+
+/* User block*/
+.admin_statistic_user_online, .admin_statistic_user_new{
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.admin_statistic_user_header{
+    padding: 10px;
+    color: #098ed0;
+    border-bottom: 2px solid #cccccc;
+    text-transform: uppercase;
+}
+.admin_statistic_user_content{
+    padding: 10px;
+}
+.admin_statistic_user_item{
+    margin-bottom: 1.75em;
+}
+.admin_statistic_user_item_name{
+    height: 2.4em;
+    line-height: 1.3em;
+    overflow: hidden;
+}
+.admin_statistic_user_item_avatar img{
+    width: 90px;
+    height: 90px;
+    border: 2px solid #cccccc;
+}
+
+/* post block*/
+.admin_statistic_post_new{
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.admin_statistic_post_header{
+    padding: 10px;
+    color: #098ed0;
+    border-bottom: 2px solid #cccccc;
+    text-transform: uppercase;
+}
+.admin_statistic_post_item{
+    border-bottom: 1px dotted #cccccc;
+}
+.admin_statistic_post_item_avatar img{
+    width: 60px;
+    height: 60px;
+}
+.admin_statistic_post_item_title{
+    height: 2.4em;
+    line-height: 1.3em;
+    overflow: hidden;
+    margin-bottom: 0.45em;
+}
+.admin_statistic_post_item_comment_posttitle, .admin_statistic_post_item_comment_nd{
+    height: 1.4em;
+    line-height: 1.3em;
+    overflow: hidden;
+}
+.admin_statistic_post_content{
+    padding: 10px;
+}
+.admin_statistic_post_comment_item_avatar img{
+    width: 60px;
+    height: 60px;
+}
+.admin_statistic_post_new_comment{
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+@media all and (min-width: 320px) 
+{
+}
+@media all and (min-width: 480px) 
+{
+}
+@media all and (min-width: 600px) 
+{
+}
+@media all and (min-width: 720px) 
+{
+}
+@media all and (min-width: 800px) 
+{
+}
+@media all and (min-width: 980px) 
+{
+}
+@media all and (min-width: 1024px) 
+{
+}
+@media all and (min-width: 1240px) 
+{
+}

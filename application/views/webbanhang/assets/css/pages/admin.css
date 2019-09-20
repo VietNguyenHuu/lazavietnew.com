@@ -1,0 +1,91 @@
+#main{padding:0px}
+
+table td{vertical-align:top;}
+.table{width:100%;box-sizing: border-box;}
+.table_basic{border: 1px solid #666666;border-collapse: collapse;}
+.table_basic tr:nth-child(2n){background-color: rgba(225,225,225,0.75);}
+.table_basic tr.spec_row{background-color: rgba(100,225,225,0.5);}
+.table_basic tr.unique_row{background-color: rgba(255,100,100,0.5);}
+.table_basic td{border: 1px solid #666666;padding: 5px;}
+
+#main .admin_navi_left{z-index:2;background-color:#2B333E}
+#main .admin_content{z-index:1;}
+
+#main .admin_navi_left a.submenu_item{float:left;display:block;padding:10px 0.5em;color:#AEB7C2;cursor:pointer;margin-right:0.5em;border-radius:0px;}
+#main .admin_navi_left a.submenu_item:last-child{border:0px;border-left:3px solid transparent;}
+#main .admin_navi_left a.submenu_item:hover, #main .admin_navi_left a.submenu_item.current{
+    background-color: #ffffff;
+    color: #00c0ef;
+}
+#main .admin_navi_left a.submenu_item span{font-family:inherit}
+#main .admin_navi_left span.submenu_item_title{display:none}
+#main .admin_navi_left_header{line-height:20px;padding:0.5em 0.5em;border-bottom:2px solid #ddddff;font-size:18px;color:#ffffff;text-transform: uppercase;}
+.admin_navi_left_minium_toggle_btn{display:none}
+
+#main div[name='admin_content_header']{
+    line-height:20px;
+    padding:0.6em;
+    padding-left: 10px;
+    font-size:18px;
+    color:#098ed0;
+    text-transform: uppercase;
+}
+.admin_content_body{padding: 0px;}
+#main div[name='admin_content_body']>fieldset{padding:10px;margin-bottom:40px;background-color:#eeeeff;border:1px solid #9999aa;border-top-width:3px;box-shadow:0px 0px 9px #aaaaff;}
+#main div[name='admin_content_body']>fieldset>legend{color:#6666aa;border:inherit;background-color:inherit;}
+
+div[name='admin_content_body']>fieldset fieldset{background-color:rgba(225,225,225,0.5)}
+
+@media all and (min-width: 240px) 
+{
+
+}
+@media all and (min-width: 600px) 
+{
+    #main .admin_navi_left span.submenu_item_title{display:inline}
+}
+@media all and (min-width: 720px) 
+{
+    #main .admin_contaner{display:table;width:100%;height:auto;}
+    #main .admin_navi_left{
+        display:table-cell;
+        width:200px;
+        position: relative;
+        vertical-align: top;
+    }
+    #main .admin_navi_left.minium{width:auto;}
+
+    #main .admin_content{
+        display:table-cell;
+        vertical-align: top;
+    }
+    #main .admin_navi_left.minium .admin_navi_left_header span{display:none}
+    #main .admin_navi_left_fix_minheight{min-height:600px;}
+    #main .admin_navi_left a.submenu_item{float:none;margin-right:0px}
+    #main .admin_navi_left.minium a.submenu_item span{display:none}
+    .admin_navi_left_minium_toggle_btn{
+        display: inline-block;
+        position: absolute;
+        top: 0.5em;
+        right: 0px;
+        background-color: #fafafa;
+        padding: 0.2em;
+        padding-right: 1px;
+        color: #333333;
+        cursor: pointer;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .admin_navi_left_minium_toggle_btn.fa-rotate-180{
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+@media all and (min-width: 1024px) 
+{
+}
+@media all and (min-width: 1280px) 
+{
+}

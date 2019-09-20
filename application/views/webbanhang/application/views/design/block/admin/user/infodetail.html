@@ -1,0 +1,61 @@
+<div class='user_info_box'>
+    <a href='{{link}}' title='Xem trang công khai' target='_blank' id='user_info_id' data-id='{{id}}'>
+        <img class='user_info_avata' src='{{avata}}'>
+        {{realname}}
+    </a>
+</div>
+
+<div class="width3 width3_0_12 width3_980_6" style='border-top: 2px solid #26a1dd'>
+    
+    <div class='padding_v user_info_box'>
+        <p class='stt_tip fontsize_a4 font_noticalight margin_b'>Tác vụ --</p>
+        <div class='margin_t1em'></div>
+        <span class='button padding red fontsize_d2 margin_r' onclick='user.del({{id}})'>
+            <i class='fa fa-trash-o'></i> 
+            Xóa thành viên
+        </span> 
+        {{action_lock}}
+    </div>
+    <div class='user_info_box'>
+        <span>
+            Phân quyền: 
+            <span class='stt_tip'>{{leveltxt}}</span> 
+        </span>
+        <br>
+        {{action_level}}
+    </div>
+    <div class='user_info_box'>
+        <p class='stt_tip fontsize_a4 font_noticalight margin_b'>Tác vụ khác --</p>
+        <div class='line_height_2'>
+            Cộng điểm (điểm) <br>
+            <input class='margin_b' type='number' id='admin_user_bonus_score_input' value='' placeholder='Nhập số điểm thưởng'> 
+            <div class='hide admin_user_bonus_score_inputcausebox'></div>
+            <span class='button padding gray margin_b margin_r' title='Nhấn để thêm ghi chú cộng điểm' onclick="$('.admin_user_bonus_score_inputcausebox').toggleClass('hide')">+ Ghi chú</span>
+            <div class='hide admin_user_bonus_score_inputcausebox'>
+                <textarea class='padding margin_t1em margin_l0' style='display:block; width:100%; height:5em; margin-bottom:1.2em;' id='admin_user_bonus_score_inputcause' placeholder='Nhập ghi chú cộng điểm' value=''></textarea>
+            </div>
+            <span class='button padding margin_b' onclick='user.bonus_score()'>Tiến hành</span>
+        </div>
+        <br>
+        <div class='line_height_2'>
+            Cộng tiền (vnđ) <br>
+            <input class='margin_b' type='number' id='admin_user_bonus_money_input' value='' placeholder='Nhập số tiền thưởng'> 
+            <span class='button padding margin_b' onclick='user.bonus_money()'>Tiến hành</span>
+        </div>
+    </div>
+</div>
+<div class="width3 width3_0_12 width3_980_6 padding" style='border-top: 2px solid #26a1dd'>
+    <div class='line_height_1_5 user_info_box'>
+        <p class='stt_tip fontsize_a4 font_noticalight'>Chi tiết --</p>
+        <p class='margin_t1em'>User ID : <span class='font_noticalight'>{{id}}</span></p>
+        <p class=''>Tên đăng nhập : <span class='font_noticalight'>{{username}}</span></p>
+        <p class=''>Giới tính : <span class='font_noticalight'>{{sex}}</span></p>
+        <p class=''>Năm sinh : <span class='font_noticalight'>{{birth}}</span></p>
+        <p class=''>Số điện thoại : <span class='font_noticalight'>{{phone}}</span></p>
+        <p class=''>Email : <span class='font_noticalight'>{{email}}</span></p>
+        <p class=''>Truy cập cuối : <span class='font_noticalight'>{{lasttime}}</span></p>
+        <p class=''>Điểm thưởng : <span class='font_noticalight'>{{score}}</span></p>
+        <p class=''>Tài khoản : <span class='font_noticalight'>{{money}} VNĐ</span></p>
+    </div>
+</div>
+<div class="clear_both"></div>

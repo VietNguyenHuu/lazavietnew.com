@@ -1,0 +1,34 @@
+.page_title{margin-bottom:0px}
+.all_author_header{background-color: #fbfbb9;color:#26a1dd;}
+.post_author_list{background-color: #ffffff;}
+.post_author_item{display: block; border:0px !important; border-bottom:1px dotted #333333 !important;}
+.post_author_item:hover{background-color: #fbfbb9;}
+.post_author_item_tag, .post_author_item_numtag, .post_author_item_lastupdate{line-height:2em;}
+.post_author_item_lastpost_image, .post_author_item_tag_image{height:2em;}
+@media all and (min-width: 320px) 
+{
+}
+@media all and (min-width: 480px) 
+{
+}
+@media all and (min-width: 600px) 
+{
+}
+@media all and (min-width: 720px) 
+{
+}
+@media all and (min-width: 800px) 
+{
+}
+@media all and (min-width: 980px) 
+{
+    .post_author_item{padding:1em 0.5em}
+    .post_author_item_lastpost{display:block;height:2em;overflow: hidden;}
+    .post_author_item:hover .post_author_item_lastpost{height:auto;}
+}
+@media all and (min-width: 1024px) 
+{
+}
+@media all and (min-width: 1240px) 
+{
+}

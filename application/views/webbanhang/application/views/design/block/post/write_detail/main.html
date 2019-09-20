@@ -1,0 +1,166 @@
+<div class="page_title">
+    <h1 class="width_max1300px font_noticalight">
+        Bài viết của tôi 
+    </h1>
+</div>
+<div class="width_max1300px">
+
+    <div class="margin_v fontsize_a4 postwritedetail_title">{{post_title}}</div>
+    <div class="postwritedetail_boxgr">
+        <div class="width3 width3_0_12 width3_720_4 padding">
+            <div class="postwritedetail_box info">
+                <div class="padding postwritedetail_header">
+                    THÔNG TIN &nbsp;
+                    <a href="quan-ly-bai-viet.html?action=edit&id={{post_id}}" class="float_right" title="Chỉnh sửa bài viết">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                </div>
+                <div class="postwritedetail_content">
+                    <div class="item">
+                        <div class="width3 width3_0_4">Danh mục</div>
+                        <div class="width3 width3_0_8">{{post_linkto}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Trạng thái</div>
+                        <div class="width3 width3_0_8">{{post_status}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Cập nhật lúc</div>
+                        <div class="width3 width3_0_8">{{post_updatetime}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Duyệt bởi</div>
+                        <div class="width3 width3_0_8">{{post_checkedby}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width3 width3_0_12 width3_720_4 padding">
+            <div class="postwritedetail_box statistic">
+                <div class="padding postwritedetail_header">
+                    THỐNG KÊ
+                </div>
+                <div class="postwritedetail_content">
+                    <div class="item">
+                        <div class="width3 width3_0_4">Lượt xem</div>
+                        <div class="width3 width3_0_8">{{post_view}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Yêu thích</div>
+                        <div class="width3 width3_0_8">{{post_like}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Đánh giá</div>
+                        <div class="width3 width3_0_8">{{post_rank}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">Bình luận</div>
+                        <div class="width3 width3_0_8">{{post_comment}}</div>
+                        <div class="clear_both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width3 width3_0_12 width3_720_4 padding">
+            <div class="postwritedetail_box comment">
+                <div class="padding postwritedetail_header">
+                    TƯƠNG TÁC
+                </div>
+                <div class="postwritedetail_content">
+                    <div class="item">
+                        <div class="width3 width3_0_4">...</div>
+                        <div class="width3 width3_0_8">...</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">...</div>
+                        <div class="width3 width3_0_8">...</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">...</div>
+                        <div class="width3 width3_0_8">...</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="item">
+                        <div class="width3 width3_0_4">...</div>
+                        <div class="width3 width3_0_8">...</div>
+                        <div class="clear_both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+    <div class="postwritedetail_boxgr">
+
+        <div class="width3 width3_0_12 width3_980_6 padding">
+            <div class="postwritedetail_box comment">
+                <div class="padding postwritedetail_header">
+                    BÌNH LUẬN BÀI VIẾT
+                </div>
+                <div class="postwritedetail_content">
+                    <div class="postwrite_commentaction margin_v">
+                        <div class="postwrite_commentaction_result"></div>
+                        <select class="margin_l0 margin_r postwrite_commentaction_list">
+                            <option value="0">-Chọn Tác Vụ-</option>
+                            <option value="del">Xóa mục đã chọn</option>
+                        </select>
+                        <span class="button padding btn_postwrite_commentaction">Thực hiện</span>
+                    </div>
+                    <div class="postwrite_commentlist_header">
+                        <div class="width3 width3_0_12 width3_720_2 padding">
+                            <input type='checkbox' class="btn_checkall" id="btn_checkall_postwrite_comment" data-checkallfor='.postwrite_commentlist_item_checkbox'/>
+                            <label for="btn_checkall_postwrite_comment">Chọn</label>
+                        </div>
+                        <div class="width3 width3_0_12 width3_720_3 padding">Người gởi</div>
+                        <div class="width3 width3_0_12 width3_720_7 padding">Nội dung</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="postwrite_commentlist">
+                        {{post_commentlist}}
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="width3 width3_0_12 width3_980_6 padding">
+            <div class="postwritedetail_box report">
+                <div class="padding postwritedetail_header">
+                    PHẢN HỒI TỪ NGƯỜI DÙNG
+                </div>
+                <div class="postwritedetail_content">
+                    <div class="postwrite_reportaction margin_v">
+                        <div class="postwrite_reportaction_result"></div>
+                        <select class="margin_l0 margin_r postwrite_reportaction_list">
+                            <option value="0">-Chọn Tác Vụ-</option>
+                            <option value="del">Xóa mục đã chọn</option>
+                        </select>
+                        <span class="button padding btn_postwrite_reportaction">Thực hiện</span>
+                    </div>
+                    <div class="postwrite_reportlist_header">
+                        <div class="width3 width3_0_12 width3_720_2 padding">
+                            <input type='checkbox' class="btn_checkall" id="btn_checkall_postwrite_report" data-checkallfor='.postwrite_reportlist_item_checkbox'/>
+                            <label for="btn_checkall_postwrite_report">Chọn</label>
+                        </div>
+                        <div class="width3 width3_0_12 width3_720_3 padding">Người gởi</div>
+                        <div class="width3 width3_0_12 width3_720_7 padding">Nội dung</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div class="postwrite_reportlist">
+                        {{post_reportlist}}
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="clear_both"></div>
+    </div>
+</div>
+<div class="hide post_write_detail_id" data-id-post="{{post_id}}"></div>
+

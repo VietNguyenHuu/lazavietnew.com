@@ -1,0 +1,56 @@
+<div class="width_max1300px">
+    <div id='sign_content'>
+    	<form name='sign_form' action='javascript:sign.send()' method='post'>
+    		
+            <div class='align_left' name='status'>
+                <i class='fa fa-sign-in'></i> 
+                <span class=''>
+                    Đăng nhập vào 
+                    <span class='tip fontsize_d1 padding bg_highlight' style='border-radius:5px;'>{{domain_name}}</span>  
+                </span>
+            </div>
+            <input name='name' type='text' placeholder='nhập tên' id='input_name'>
+            <input name='pass' type='password' placeholder='nhập mật khẩu'>  
+            <div class='display_inline_block padding_v'>
+                <input class='button fontsize_a2' type='submit' value='&nbsp;Đăng nhập&nbsp;'>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class='display_inline_block forget_password'>
+                <span class='padding_v stt_action stt_highlight' onclick='forget_password.load()' title='Nhấn để lấy lại mật khẩu'>
+                    <i class='fa fa-question-circle'></i> 
+                    Quên mật khẩu
+                </span>
+            </div>
+            <div class='clear_both'></div>
+        </form>
+        
+        <!--<div id='sign_with_other'>
+            <div class='stt_tip padding margin_t'>Hoặc đăng nhập qua</div>
+            <div class='width_50 align_center padding login_width'>
+                <a href='javascript:login_width_fb.send()'>
+                    <div class='padding bg_highlight'>
+                        <img src='assets/img/pages/login/login_width_fb.png' alt='login-width-fb'>
+                        <span class='align_middle'>Facebook</span>
+                    </div>
+                </a>
+            </div>
+            <div class='width_50 align_center padding login_width'>
+                <a href='javascript:login_width_google.send()'>
+                    <div class='padding bg_highlight'>
+                        <img src='assets/img/pages/login/login_width_google.png' alt='login-width-google+'>
+                        <span class='align_middle'>Google+</span>
+                    </div>
+                </a>
+            </div>
+            <div class='clear_both'></div>
+        </div>-->
+        
+        <div class='padding_v sign_goto_register'>
+            <a href='register/index' class='fontsize_a2' title='Đăng ký tài khoản mới'>
+                <i class='fa fa-hand-o-right'></i> 
+                Đăng ký tài khoản mới
+            </a>
+        </div>
+    </div>
+    <div class='hide' id='login_rdr' data-rdr='{{rdr}}'></div>
+</div>

@@ -1,0 +1,5 @@
+#main{padding:0px}
+.post_wrote_list_avata{height:2em;width:2em;border-radius:50%;border:1px solid #ccc;overflow: hidden;display:inline-block;margin-right:0.5em;vertical-align: middle;}
+.post_write_fast_alert{color:#ffffff;background-color: #a59898;line-height: 1.5em;}
+
+input[name='post_add_title']{max-width: 100%; width:100%; padding: 0.5em}

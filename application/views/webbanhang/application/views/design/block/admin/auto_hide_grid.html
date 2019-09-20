@@ -1,0 +1,15 @@
+<div class='hide toggle_hide_box_linked' id='{{id}}'>
+    <div class='grid'>
+        <div class='grid_header' style="padding-left: 10px;">
+            <div class='grid_header_label'>{{title}}</div>
+            <div class='grid_header_label grid_header_control disable' 
+                 onclick = "$('.toggle_hide_box').removeClass('hide'); $('.toggle_hide_box_linked').addClass('hide');">
+                <i class='fa fa-times' title='Ẩn'></i>
+            </div>
+            <div class='clear_both'></div>
+        </div>
+        <div class='grid_content padding' style="padding-left: 10px;">
+            {{content}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class='item'>
+    <div class='item_control padding_h margin_r'>
+        <a href='{{link}}' target='_blank' class='align_center stt_tip fontsize_d2' title='Xem trước'>
+            <i class="fa fa-eye"></i>
+        </a>
+        &nbsp;&nbsp;
+        <i class='fa fa-pencil' onclick='main_menu.load_form_edit({{id}})' title='Edit'></i>
+        &nbsp;&nbsp;
+        <i class='fa fa-trash-o stt_mistake' onclick='main_menu.del({{id}})' title='Delete'></i>
+    </div>
+    <div class='padding_l margin_l'>
+        <img class='item_avata' src='{{avata}}'>
+        <span class='stt_action' onclick="main_menu.load_list({{id}})">{{title}}</span> 
+    </div>
+    <div class='clear_both'></div>
+</div>

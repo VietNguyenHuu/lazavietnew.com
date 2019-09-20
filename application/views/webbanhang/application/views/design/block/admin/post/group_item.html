@@ -1,0 +1,13 @@
+<div class='item admin_postgroup_list_item' style='border-bottom:1px dotted #999999'>
+    <div class='width3 width3_0_12 width3_1024_10 padding_l'>
+        <a class='{{text_linethrough}}' href="javascript:admin_post_group.loaddetail({{id}})" title='Nhấn để quản lí'>{{m_title}}</a>
+    </div>
+    <div class='width3 width3_0_12 width3_1024_2 align_right padding_h'>
+        <i class='fa fa-info-circle stt_tip stt_action' onclick="admin_post_group.loadinfo({{id}})"></i>
+        &nbsp;&nbsp;
+        <i class='fa fa-pencil stt_highlight stt_action' onclick="admin_post_group.loadformedit({{id}})"></i>
+        &nbsp;&nbsp;
+        <i class='fa fa-trash-o stt_mistake stt_action' onclick="admin_post_group.{{deltype}}({{id}})"></i>
+    </div>
+    <div class='clear_both'></div>
+</div>

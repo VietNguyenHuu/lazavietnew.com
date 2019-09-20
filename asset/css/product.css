@@ -1,0 +1,38 @@
+.product_left,product_right {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 10px;
+}
+.product_center {
+    box-sizing: border-box;
+    width: 40%;
+    padding: 10px;
+}
+.addtocard input {
+    padding: 5px;
+    width: 220px;
+    height: 42px;
+    border-radius: 2px;
+    border: 0;
+   
+}
+.input_buynow {
+    background-color: #ffb916;
+    color: white;
+    margin-right: 10px;
+}
+.input_addtocard    {
+    background-color: #f57224;
+    color: #ffb916;
+}
+.product_center_count,.product_center_price,.product_center_title {
+    box-sizing: border-box;
+    line-height: 40px;
+    
+}
+.product_center_input_number {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}

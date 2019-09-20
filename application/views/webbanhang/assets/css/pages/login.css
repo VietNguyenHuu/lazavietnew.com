@@ -1,0 +1,26 @@
+@media all and (min-width:240px)
+{
+    #sign_content{padding:50px 0px 20px 0px;border-radius:5px;}
+    #sign_content div[name='status']{color:#db4a38;font-weight:normal;padding:10px 0px;margin:10px 2px;line-height: 2em;}
+
+
+    #sign_content form,.sign_goto_register,#sign_with_other{border:2px dotted #ffffff;border-radius:10px;background-color:#cbf0ec;margin:0px auto;padding:10px 30px;}
+    #sign_content form input[type='text'],#sign_content form input[type='password']{max-width: 100%;width:100%;display:block;box-sizing: border-box !important;padding:10px 5px;margin-bottom: 20px;margin-left:0px}
+    #sign_content input[type='submit'],#sign_content input[name='button_register']{}
+    .login_width img{width:30px;height: 30px;margin-right:0.5em;vertical-align: middle;}
+    
+    .sign_goto_register,#sign_with_other{margin-top:1em}
+    
+    #sign_with_other .width_50 .bg_highlight{border-left: 2px solid #40c4ef;background-color:#ffffff}
+} 
+@media all and (min-width:600px)
+{
+    form[name='sign_form'],.sign_goto_register,#sign_with_other{width:500px;}
+    #sign_content div[name='status']{color:#db4a38;border-bottom-left-radius:20px;border-top-right-radius:20px;font-weight:normal;font-size:24px;min-height:50px;padding:10px 0px;margin:10px 2px;line-height: 40px;}
+}
+
+@media all and (min-width:800px)
+{
+    #main{padding:0px;border-radius:0px}
+    #sign_content{background-image:url("/assets/css/img/login_bg.png");background-size: 100% 100%;}
+} 

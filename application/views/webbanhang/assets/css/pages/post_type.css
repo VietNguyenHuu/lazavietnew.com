@@ -1,0 +1,35 @@
+/*css for post type*/
+.page_title{margin-bottom: 0px;}
+.page_title + .grid{
+    margin-top:0px;
+}
+
+.post_follow_content_label{cursor:pointer;text-align: center;color:#666;font-family: 'Roboto', Helvetica, Arial,sans-senif;border-bottom: 2px solid #c0c0c0;padding-top:2px;}
+.post_follow_content_label.stt_highlight,.post_follow_content_label:hover{border-bottom: 2px solid #6666aa;color:#26a1dd;background-color:#dbe8ef;border-top-left-radius: 4px;border-top-right-radius: 4px;}
+
+.navi_submenu_topauthor_item{padding:0.4em 1px;border-radius: 0px;}
+.navi_submenu_topauthor_item:last-child{border-bottom:0px;}
+
+.navi_submenu_topauthor_item .width3_0_9{border-radius: 0px;background-color: #cccccc;min-height: 2em;}
+.navi_submenu_topauthor_item:nth-child(1) .width3_0_9{background-color:#fbd3e5} 
+.navi_submenu_topauthor_item:nth-child(2) .width3_0_9{background-color:#f9f8b6} 
+.navi_submenu_topauthor_item:nth-child(3) .width3_0_9{background-color:#b7f6ae} 
+
+.navi_submenu_topauthor_item .width3_0_3{border-radius: 0px;background-color: #26a1dd;color:#ffffff;min-height: 2em;line-height: 2em;}
+
+.navi_submenu_topauthor_item_avata{height:2em;width:2em;margin-right:0.5em;display:inline-block;vertical-align: middle;position:relative;border-radius:0px}
+
+h2.grid_header_label{font-weight: normal;}
+
+.list_direct_type_avata{
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 3px;
+    border: 1px solid #999999;
+}
+.post_type_description{
+    padding: 0.5em;
+    background-color: #ffffff;
+    border-top: 2px solid #e87c11;
+    color: #333333;
+}

@@ -1,0 +1,55 @@
+#main{padding:0px}
+.intro_box{display:none;margin: 0px;padding:0.5em;background-color: #ffffff;}
+.intro_box .item{}
+
+
+.describe_box{margin: 0.5em 0px;margin-top:1.5em}
+.describe_box_item{padding-top: 1.5em;}
+.describe_box .describe_item{padding: 0.5em 0.5em;background-color: #ffffff;margin-bottom: 2em;}
+.describe_box .describe_item .title{color:#26a1dd;display:inline-block;}
+.describe_box .describe_item .avata{display:inline-block;width:2em;height:2em;margin-top:-1em;margin-right: 1em;overflow: hidden;}
+.describe_box .describe_item .avata img{width:100%;height:100%}
+
+#main h1{border-radius: 0px;}
+#main .box{margin-bottom: 2em;padding: 1em 0.2em;background-color: #ffffff;border-radius: 0px;}
+#main .box:first-child{}
+#main .box h2{color:#666666;font-size: 120%;font-weight: 600;padding:0.5em 0px;border-bottom: 1px solid #999999;border-radius:0px;margin-bottom:1em}
+#main .box p{padding:0.5em 0px;line-height:1.75em}
+#main img.logo{width:5em;max-width:100%;}
+#main .user_conner_head{color:#666666;padding:0.5em 0px;border-bottom: 1px solid #999999;border-radius:0px;margin-bottom: 0.5em;}
+#main .user_conner .avata{display:inline;margin-top:0px;margin-right:0.5em;width:2em;height: 2em;border: 1px solid #666;padding: 1px;}
+
+.index_content_box{overflow: auto;white-space: nowrap;}
+.index_content_item{display:inline-block;width:200px;overflow: hidden;margin-right: 0.5em;}
+.index_content_item_post .post_content_item,.index_content_item .product_item_2 small{white-space: normal}
+.index_content_item_post .post_content_item_avata{float:none;display:block;text-align: center;}
+
+@media all and (min-width: 600px) 
+{
+    .intro_box .item{}
+    .intro_box{display:block;padding-top:180px;padding-bottom: 50px;}
+    .intro_box .item{width:20%;height:200px;position:relative;}
+    .intro_box .item[index='1']{margin-left:8%;margin-top: 0px;}
+    .intro_box .item[index='2']{margin-left:-4%;margin-top: -120px;}
+    .intro_box .item[index='3']{margin-left:-4%;margin-top: 0px;}
+    .intro_box .item[index='4']{margin-left:-4%;margin-top: -120px;}
+    .intro_box .item[index='5']{margin-left:-4%;margin-top: 0px;}
+    
+    .intro_box .item .avata{position:absolute;top:0px;left:0px;width:100%;height:200px;z-index:1}
+    .intro_box .item .avata img{width:100%;height:100%;}
+    
+    .intro_box .item .title{position:absolute;top:0px;left:25%;width:50%;height:200px;z-index:2;padding:0.5em 0px;color:#fff;text-shadow: 1px 1px #26a1dd;}
+    
+    .danh_ngon_slide .item{height:4.3em;overflow: hidden;}
+}
+@media all and (min-width: 780px) 
+{
+    #main .box p{padding:0.5em 2em;max-width:1100px;margin:0.5em auto;}
+    .index_content_box{overflow: hidden;white-space: normal;}
+    .index_content_item{display:block;width:100%;}
+    .index_content_item_post .post_content_item_avata{float:left;display:block;}
+}
+@media all and (min-width: 1024px) 
+{
+    
+}

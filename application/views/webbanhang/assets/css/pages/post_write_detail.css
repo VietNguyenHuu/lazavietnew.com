@@ -1,0 +1,45 @@
+/*css for post write detail*/
+#main{padding:0px}
+.page_title{margin-bottom: 0px;}
+.postwritedetail_title{
+    color: #098ed0;
+}
+.postwritedetail_boxgr{
+    background-color: #cccccc;
+    padding: 10px;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.postwritedetail_boxgr:nth-child(2n+1){
+    background-color: #bfe6f9;
+}
+
+.postwritedetail_box{
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.postwritedetail_header{
+    border-bottom: 2px solid #cccccc;
+    color: #098ed0;
+    padding: 10px;
+}
+.postwritedetail_content{
+    padding: 10px;
+}
+
+.postwritedetail_content .item{
+    padding: 0.5em 0px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.postwrite_commentlist_header, .postwrite_reportlist_header{
+    padding: 10px;
+    background-color: #cccccc;
+}
+.postwrite_commentlist_item, .postwrite_reportlist_item{
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}

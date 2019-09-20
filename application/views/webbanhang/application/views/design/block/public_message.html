@@ -1,0 +1,16 @@
+<div id='public_message'>
+    <div class='stt_action public_message_header' onclick="$('#public_message').toggleClass('extra')">
+        <i class="fa fa-envelope-o"></i> 
+        Để lại lời nhắn
+    </div>
+    <div class='public_message_content'>
+        <form action="javascript:public_message.send()" method='post'>
+            <input type='text' value="{{public_message_mail_input}}" name='public_message_email' placeholder='Địa chỉ Email'/>
+            <textarea placeholder='Lời nhắn' name='public_message_nd'></textarea>
+            <div class='public_message_action'>
+                <input class="button" type='submit' value='Gửi'/>
+                <input class="button gray" type='reset' value='Làm lại'/>
+            </div>
+        </form>
+    </div>
+</div>

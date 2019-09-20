@@ -1,0 +1,194 @@
+<div class="width_max1300px">
+    <div class='width3 width3_0_12 width3_980_9 post_content_nd_item'>
+        {{advermain}}
+        <div class='post_detailcontent_title'>
+            <h1>{{title}}</h1>
+            {{quickedit}}
+            <div class='clear_both'></div>
+        </div>
+        <div class='padding_h font_roboto fontsize_d2'>
+            <i class='fa fa-folder-o'></i>
+            {{breakcump}}
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class='display_inline_block'>
+                <i class='fa fa-eye' title='Lượt xem bài viết'></i> 
+                {{view_num}} 
+                - 
+                <a title='Bình luận' href='{{url_current}}#post_comment'>
+                    <i class='fa fa-comments-o'></i>
+                    {{comment_num}}
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <i class='fa fa-clock-o' title='Cập nhật lần cuối'></i>
+                {{last_update}}
+            </span>
+        </div>
+        <div class='post_detailcontent_avatabox'>
+            <img class='lazyload' src='assets/img/system/lazyload.gif' data-original='{{avata_original}}' alt='{{titlese}}' title='{{titlese}}'>
+        </div>
+        <div class='width_max800px padding_h post_detailcontent_action' style='line-height:2.5em'>
+            <div class='float_left' style='line-height:1.2em'>{{str_like_full}}</div>
+            <span class='display_inline_block'>{{str_rank}}</span>
+            <span class="display_inline_block">
+                <span class='button' onclick='post.like({{id}})' title='Thích bài này'>
+                    <i class='fa fa-heart-o'></i> 
+                    <span class=''>
+                        <span id='post_content_like_count'>{{like_num}}</span>
+                    </span>
+                </span>
+                <span class='button' onclick='post.follow({{id}})' title='Theo dõi bài này'>
+                    <i class='fa fa-rss'></i> 
+                    <span class=''>
+                        <span id='post_content_follow_count'>{{follow_num}}</span>
+                    </span>
+                </span>
+                <a href='tai-bai-viet/{{id}}.html' target='_blank'>
+                    <span class='button' title='Tải bài này dưới dạng file pdf'>
+                        <i class='fa fa-download'></i> 
+                        Tải PDF
+                    </span>
+                </a>
+            </span>
+            <div class='clear_both'></div>
+        </div>
+        <div class='width_max800px post_detailcontent_content'>
+            <div class='font_roboto'>
+                {{content}}
+            </div>
+        </div>
+        <div class='width_max800px margin_v padding_v post_tags_box'>
+            <b class='stt_tip'>
+                <i class='fa fa-tags fa-rotate-270'></i> 
+                TAGS: 
+            </b>
+            {{tags}}
+        </div>
+        <div class='width_max800px stt_tip post_detailcontent_date'>
+            <div class='padding_r align_left'>
+                <a href='{{author_link}}' title='{{author_realname}}'>
+                    <img 
+                        class='lazyload radius_50 align_middle' 
+                        src='assets/img/system/lazyload.gif' 
+                        data-original='{{author_avata}}' 
+                        style='height:2em; max-width:5em; border:1px solid #666' 
+                        alt='{{author_realname}}' 
+                    />
+                    <span class='margin_h align_middle'>{{author_realname}}</span>
+                </a>
+                <span class='margin_r align_middle stt_action' onclick='post.follow_author({{author_id}})' title='Theo dõi {{author_realname}}'>
+                    Theo dõi 
+                    <i class='fa fa-rss'></i>
+                    <span class='margin_l' id='post_content_follow_author_count'>{{author_numfollow}}</span>
+                </span>
+            </div>
+        </div>
+
+        <div class='width_max800px margin_b padding_v'>
+            <div class='padding_v margin_v'>
+                <div class='fontsize_a2'>
+                    <i class='fa fa-share'></i>
+                    Chia sẻ 
+                    <b>{{title}}</b> 
+                    tới bạn bè để mọi người cùng đọc nhé !
+                </div>
+                <div class='margin_t'>{{str_like_full}}</div>
+            </div>
+        </div>
+        
+        <div class='width_max800px padding_v margin_t' style='margin-bottom:2em;'>
+            <a href='bao-loi-bai-viet/{{id}}.html' title='Gởi báo cáo sai phạm bài viết'>
+                <span class='button padding red fontsize_d2'>
+                    <i class='fa fa-send'></i> 
+                    Gởi báo cáo sai phạm
+                </span>
+            </a>
+        </div>
+
+        <div class='width_max800px'>
+            <div class='grid'>
+                <div class='grid_header'>
+                    <a 
+                        name='post_comment' 
+                        class='grid_header_label' 
+                        onclick="post.updatecomment({{id}}); $(this).parents('.grid_header').find('.grid_header_label').addClass('disable'); $(this).removeClass('disable');"
+                    >Bình luận</a>
+                    <div 
+                        class='grid_header_label disable' 
+                        onclick="post.updatecomment({{id}},'by_rank'); $(this).parents('.grid_header').find('.grid_header_label').addClass('disable'); $(this).removeClass('disable');"
+                    >Top phản hồi</div>
+                    <a class='grid_header_label disable' href='{{url_current}}#post_comment_fb'>Bình luận bằng facebook</a>
+                    <div class='clear_both'></div>
+                </div>
+                <div class='grid_content padding post_detailcontent_comment'>
+                    <div class='c'>
+                        <img src='assets/img/system/loading2.gif' class='align_middle margin_r' style='height:1em;' alt='Đang tải bình luận bài viết'>
+                        Phản hồi bài viết {{title}} 
+                        {{comments}}
+                    </div>
+                    <textarea name='post_detailcontent_comment_form' placeholder='Bình luận'></textarea>
+                    <span name='post_detailcontent_comment_buttonsend' class='button' onclick='post.sendcomment({{id}})'>
+                        <i class='fa fa-send'></i>
+                        <span class='margin_l'>Gửi đi</span>
+                    </span>
+                    <img src='{{user_avata}}' class='align_middle radius_50' style='height:2em;max-width:5em;border:1px solid #666666;padding:1px;' alt='{{user_realname}}'>
+                    <span class='margin_l align_middle'>{{user_realname}}</span>
+                    <div class='clear_both'></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='width_max800px'>
+            <div class="grid">
+                <div class="grid_header">
+                    <a class='grid_header_label' name='post_comment_fb'>Bình luận nhanh</a>
+                </div>
+                <div class="clear_both"></div>
+                <div class='grid_content padding'>{{comment_facebook}}</div>
+            </div>
+        </div>
+        
+        <div class='width_max800px'>
+            <div class='padding_v margin_v'>
+                <i class='fa fa-copyright'></i> 
+                Bạn đang đọc bài viết 
+                <i>{{title}}</i>
+                , hãy để nguồn {{page_domain}} khi phát hành lại nội dung này !
+            </div>
+        </div>
+    </div>
+    <div class="hide" id="post_recent_content_id">{{id}}</div>
+    
+    <div class='width3 width3_0_12 width3_980_3 padding_l post_content_navi'>
+        <div class='navi_item'>
+            <div class='navi_item_header'>
+                <span class='align_middle'>Cùng chuyên mục</span>
+            </div>
+            <div class='navi_submenu'>
+                <ul class='margin_v padding_v post_content_relative'>
+                    {{navi_samptypes}}
+                </ul>
+            </div>
+        </div>
+        
+        <div class='navi_item'>
+            <div class='navi_item_header'>
+                <span class='align_middle'>Cùng tác giả</span>
+            </div>
+            <div class='navi_submenu'>
+                <ul class='margin_v padding_v post_content_relative'>
+                    {{navi_sampauthor}}
+                </ul>
+            </div>
+        </div>
+        
+        <div class='navi_item'>
+            <div class='navi_item_header'>
+                <i class='fa fa-facebook margin_r fa-2x align_middle'></i>
+                <span class='align_middle'>Theo dõi chúng tôi</span>
+            </div>
+            <div class='radius_none navi_submenu'>
+                {{facebook_fanpage}}
+            </div>
+        </div>
+    </div>
+</div>

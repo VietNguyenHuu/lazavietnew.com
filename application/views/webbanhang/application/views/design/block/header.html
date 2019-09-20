@@ -1,0 +1,26 @@
+<header>
+    <div id='header'>
+        <div class="header_top">
+            <div class="width_max1300px">
+                <div class='header_slogend'>
+                    <a href=''>
+                        <img data-original='assets/img/system/favico.png' src='assets/img/system/lazyload.gif' alt="logo" />
+                    </a>
+                    <div class="clear_left"></div>
+                </div>
+                <form action="search" method="get" class='padding' id='search'>
+                    <input type='text' name='w' value='{{page_search_value}}' placeholder=' Tìm kiếm trên website... '/>
+                    <button class="button" type="submit">
+                        <img data-original='assets/img/system/search-glass.png' id='search_icon' src='assets/img/system/lazyload.gif' alt="seach"/>
+                    </button>
+                </form>
+                <div class='align_right padding_h member' >
+                    {{member_area}}
+                </div>
+                <div class='clear_both'></div>
+            </div>
+        </div>
+        <div class='clear_both'></div>
+        {{mainmenu}}
+    </div>
+</header>

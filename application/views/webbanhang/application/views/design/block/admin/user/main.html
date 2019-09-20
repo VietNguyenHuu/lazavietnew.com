@@ -1,0 +1,36 @@
+<div name='admin_content_header'>Quản lí thành viên: </div>
+<div name='admin_content_body'>
+    <div class="grid">
+        <div class="grid_header" style='padding-left: 10px'>
+            <div class='grid_header_label'>Danh sách thành viên</div>
+            <div class="clear_both"></div>
+        </div>
+        <div class='grid_content padding' style='padding-left: 10px'>
+            <div class='padding_v line_height_2'>
+                <input class='margin_b' type='text' name='admin_user_viewsearch' placeholder='Tìm tên người dùng'>
+                <select class='margin_b' name='admin_user_vieworder'>
+                    <option value='new'>Sắp theo mới nhất</option>
+                    <option value='online'>Sắp theo TG online</option>
+                    <option value='search'>Sắp theo tìm kiếm</option>
+                </select>
+                <span class='button padding margin_b' onclick='user.loadlist()' style='margin-left:3px'>Tải danh sách</span>
+            </div>
+            <div id='admin_user_list'></div>
+        </div>
+    </div>
+    <div class="grid">
+        <div class="grid_header" style='padding-left: 10px'>
+            <div class='grid_header_label'>
+                Thông tin và tác vụ - 
+                <span class='fontsize_d1 stt_highlight stt_action' onclick='user.reloadinfo()'>
+                    <a name='userinfo'>Cập nhật</a>
+                </span>
+            </div>
+            <div class="clear_both"></div>
+        </div>
+        <div class='grid_content padding' style='padding-left: 10px'>
+            <div id='admin_user_act'></div>
+        </div>
+    </div>    
+
+</div>

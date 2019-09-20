@@ -1,0 +1,7 @@
+#main{padding:0px;}
+.static_page_header{padding:5px;background-color:#ffffff;border-bottom:2px solid #26a1dd;font-size:20px;}
+.static_page_content{padding:5px;min-height:100px;}
+
+.static_page_header a{color: #333333; font-family: noticalight}
+.static_page_header a:hover{color: #26a1dd; }
+.static_page_header .stt_tip{color: #cccccc; }

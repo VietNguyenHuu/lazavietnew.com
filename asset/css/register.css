@@ -1,0 +1,27 @@
+.register {
+    display: block;
+    width: 400px;
+    margin: 30px auto;
+    background: #8080804d;
+    padding: 30px;
+    color: #21095c;
+}
+.register input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button[type='submit'] {
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.err {
+    color: red;
+    width: 400px;
+    margin: 30px auto;
+    background: #8080804d;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}

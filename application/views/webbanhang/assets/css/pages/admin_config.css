@@ -1,0 +1,6 @@
+/*css for admin config*/
+.admin_content_body textarea{
+    width: 100%;
+    min-height: 150px;
+    background-color: #efefef;
+}

@@ -1,0 +1,29 @@
+@media all and (min-width:240px)
+{
+	div[name='sending_status']{display:nonde;padding:5px 120px;font-size:20px;margin-top:20px;color:#33ff33;}
+	div[name='title']{text-align:left;font-size:20px;text-transform:uppercase;padding:20px 0px 10px 0px;color:#806040;}
+	div[name='contribute_content']{min-height:300px;border-radius:100px;padding:50px 0px;margin:0px 20px;margin-bottom:20px;}
+	div[name='ky_danh']{border-bottom:1px dotted #999999;padding:1px 0px;font-size:20px;font-weight:normal;}
+	div[name='ky_danh'] span.label{padding:10px 0px;color:#666666;font-size:24px;margin-right:5px;}
+	textarea[name='opinion']{display:block;padding:10px;width:100%;height:200px;margin:10px 0px;border:2px solid #999999;resize:none;}
+}
+
+@media all and (min-width:1280px)
+{
+	div[name='title']{text-align:center;font-size:24px;}
+	div[name='contribute_content']{padding:50px 100px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

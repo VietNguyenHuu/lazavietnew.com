@@ -1,0 +1,6 @@
+.page_title{margin-bottom: 0.5em}
+
+.post_series_item{background-color: #f9eec9; max-width: 200px; margin-left:auto;margin-right: auto}
+.post_series_item_title{line-height: 20px; height: 50px; overflow: hidden}
+.post_series_item_avata{width: 200px; height: 200px; position: relative}
+.post_series_item_avata img{width: 100%; height: 100%}

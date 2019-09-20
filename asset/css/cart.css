@@ -1,0 +1,60 @@
+body {
+    background-color: #f4f4f4;
+}
+
+div {
+    box-sizing: border-box;
+}
+.cart_background {
+    background-color: #f4f4f4;
+    
+}
+.background_color_item {
+    background-color: #ffffff;
+}
+.background_color_bg {
+    background-color: #f4f4f4;
+}
+
+.cart_left {
+    width: 66%;
+    margin-right: 1%;
+    float: left;
+    
+}
+.list_cart_all {
+    
+}
+.cart_right {
+    width: 33%;
+    float: left;
+   
+}
+.list_cart_title {
+    display: inline-block;
+    width: 328px;
+    
+}
+.list_cart_count,.list_cart_dongia,.list_cart_thanhtien {
+    display: inline-block;
+    width: 10%;
+    text-align: right
+}
+.delete_btn {
+    color: rgb(117, 117, 117);
+}
+.delete_btn:hover {
+    color: #f57224;
+}
+.list_cart_image {
+    width: 80px;
+    max-height: 80px;
+}
+.cart_left_list_header {
+    height: 40px;
+    padding: 10px 5px 5px 10px;
+    vertical-align: middle;
+}
+.list_cart_input {
+    margin-top: 32px;
+}

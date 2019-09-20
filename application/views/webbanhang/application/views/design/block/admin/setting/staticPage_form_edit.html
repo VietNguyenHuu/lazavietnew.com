@@ -1,0 +1,80 @@
+<div class="margin_t align_right">
+    <input class='margin_l0' type='button' value=' Cập nhật ' onclick='main_menu.update({{id}})'>
+</div>
+<div class="margin_t">
+    <input class='margin_l0' type='text' name='main_menu_update_title' placeholder=' Nhập tên trang ' value='{{title}}' style='width:100%; max-width: 100%'>
+</div>
+<div class="margin_t">
+    <input class='margin_l0' type='text' name='main_menu_update_title_shorcut' placeholder=' Shorcut title ' value='{{title_shorcut}}' style='width:100%; max-width: 100%'>
+</div>
+<div class="margin_t">
+    <input class='margin_l0' type='text' name='main_menu_update_link' placeholder=' URL trang ' value='{{url}}' style='width:100%; max-width: 100%'>
+</div>
+
+
+<div class="margin_t">
+    <select class='margin_l0' name='main_menu_update_type'>
+        {{typeitems}}
+    </select>
+</div>
+<div class="padding_v margin_t">
+    <input type='file' class='hide' id='main_menu_update_inputavata' onchange='main_menu.update_setavata(this)'>
+    <span onclick="$('#main_menu_update_inputavata').click()">
+        <img class='margin_r' src='{{avata}}' name='main_menu_update_avata' style='width:50px;height:50px;vertical-align:middle;'> 
+        Đổi avatar
+    </span>
+</div>
+
+<div class="padding_v margin_t1em">
+    <p class="fontsize_a4 font_noticalight">Cài đặt hiển thị</p>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageisprimary" {{isprimary}}/>
+        <label for="staticPageisprimary">Đặt làm trang chủ website</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowheader" {{OptionShowheader}}/>
+        <label for="staticPageOptionShowheader">Show header layer</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowfooter" {{OptionShowfooter}}/>
+        <label for="staticPageOptionShowfooter">Show footer layer</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowinheader" {{OptionShowinheader}}/>
+        <label for="staticPageOptionShowinheader">Show it in header layer</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowinfooter" {{OptionShowinfooter}}/>
+        <label for="staticPageOptionShowinfooter">Show it in footer layer</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowbreakcump" {{OptionShowbreakcump}}/>
+        <label for="staticPageOptionShowbreakcump">Show breakcump</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowfullshare" {{OptionShowfullshare}}/>
+        <label for="staticPageOptionShowfullshare">Show Social Network buttons</label>
+    </div>
+    <div class="margin_v">
+        <input type="checkbox" id="staticPageOptionShowquickmessage" {{OptionShowquickmessage}}/>
+        <label for="staticPageOptionShowquickmessage">Show quick message box</label>
+    </div>
+</div>
+
+<p class="display_inline_block fontsize_a4 font_noticalight margin_t1em margin_b" onclick="$('#main_menu_update_content_boxnd').toggleClass('hide')">Nội dung trang</p>
+
+<div id="main_menu_update_content_boxnd">
+    <div id='margin_v main_menu_update_contentpane'></div>
+    <div id='main_menu_update_content' style='border:1px solid #806040;background-color:#ffffff;max-width:100%;min-height:200px;max-height:400px;overflow:auto;'>
+        {{content}}
+    </div>
+</div>
+
+<br>
+<p class="display_inline_block fontsize_a4 font_noticalight margin_t1em margin_b" onclick="$('#main_menu_update_adding_css').toggleClass('hide')">Adding CSS</p>
+<textarea class='margin_t margin_l0 fullwidth' id="main_menu_update_adding_css" style='min-height: 150px'>{{adding_css}}</textarea>
+
+
+<br>
+<p class="display_inline_block fontsize_a4 font_noticalight margin_t1em margin_b" onclick="$('#main_menu_update_adding_js').toggleClass('hide')">Adding JS</p>
+<textarea class='margin_t margin_l0 fullwidth' id="main_menu_update_adding_js" style='min-height: 150px'>{{adding_js}}</textarea>

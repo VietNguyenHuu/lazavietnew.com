@@ -1,0 +1,63 @@
+<div class="login margin_bottom_20">
+
+    <div class="max_width1188 bg">
+        <div class="category_manager">
+            <div>
+                <h3>
+                    <i>Quản lý danh mục sản phẩm</i>
+                </h3>
+            </div>
+            <div>
+                <h4>Danh sách danh mục</h4>
+                <div class="admin_category_list"></div>
+            </div>
+            <div>
+                <form class="danhmuc margin_top_10" action="javascript:admin.add()">
+                    <input class="admin_category_add_title padding_5 margin_right_5" type="text">
+                    <select class="admin_category_add_id_parent padding_5">
+                        <option value="-1">chon danh muc goc</option>
+                        __category_list__
+                    </select>
+                    <input class="padding_5" type="submit">
+                </form>
+                <div id="end_category">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!--hiện sản phẩm-->
+        <div class="product_manager">
+
+            <h3>Quản lý sản phẩm</h3>
+            <span>-- Tất cả mặt hàng --</span>
+            <div class="admin_product_list">
+
+            </div>
+            <form class="sanpham margin_top_10" action="javascript:void(0)">
+
+                <input class="admin_product_add_title padding_5 margin_right_5" type="text">
+                <input class="admin_product_add_product_file" type="file">
+    <!--                <select class="admin_product_add_id_parent padding_5">
+                    <option value="-1">chon danh muc san pham</option>
+                <?php
+                $list = $this->db->query("SELECT * FROM category")->result();
+                if (!empty($list)) {
+                    foreach ($list as $item) {
+                        echo "<option value= '" . $item->id . "'>" . $item->title . "</option>";
+                    }
+                }
+                ?>
+                </select>-->
+                <input class="padding_5" type="submit" value="them san pham" onclick="admin_product.add()">
+            </form>
+            <div class="popup" id="product_edit_popup">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src='asset/js/admin.js'></script>
